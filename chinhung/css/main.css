@@ -67,7 +67,7 @@ header .gnb ul li a:hover { /* 마우스를 오버했을때 */
 
 .biz .tit {
     /*text-align: center;*/
-    margin: 110px 0 40px 0;
+    margin: 110px 0 35px 0;
 }
 .biz .tit h2 {
     color: #1774d0;
@@ -77,4 +77,83 @@ header .gnb ul li a:hover { /* 마우스를 오버했을때 */
     font-size: 50px;
     font-weight: 800;
     margin: -18px 0 0 0;
+}
+.biz .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.biz .list ul li {
+    width: 297px;
+    text-align: center;
+}
+.biz .list ul li a {
+    display: block;
+}
+.biz .list ul li a h3 {
+    font-size: 35px;
+    color: #1d1d1d;
+    margin: 20px 0 20px 0; /* 위 - 오른쪽 - 아래 - 왼쪽  */
+}
+.biz .list ul li a p {
+    margin: 0 20px 30px 20px;
+}
+.biz .list ul li a .more {
+    width: 260px;
+    height: 50px;
+    line-height: 50px;
+    /*행간을 높이와 동일하게 주면 글자가 위아래 가운데 정렬이 됨*/
+    border: 1px solid #cccccc;
+    display: inline-block;
+}
+
+.brand {
+    background: url(../images/brand_bg.png) no-repeat center center / cover;
+    color: #fff;
+    height: 763px;
+    margin: 117px 0 0 0;
+}
+.brand h2 {
+    color: #94c1ee;
+    padding: 185px 0 0 0;
+}
+.brand p {
+    font-size: 50px;
+    font-weight: 800;
+    line-height: 1.2;
+    margin: -5px 0 30px 0;
+}
+.brand a {
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    padding: 15px 38px; /* 위아래 15px 좌우 38px */
+    display: inline-block;
+}
+
+footer {
+    background-color: #1d1d1d;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 30px 0 78px 0;
+}
+footer .f_nav ul {
+    display: flex;
+}
+footer .f_nav ul li {
+    margin: 0 38px 0 0;
+}
+/* li.privacy (여백없음) li중에서 privacy라는 클래스명을 갖은 li
+   li .privacy (여백있음) li안에 privacy라는 클래스명을 갖은 요소 */
+footer .f_nav ul li.privacy {
+    font-weight: 800;
+}
+footer .f_sub {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 25px 0 0 0; /* 선 밖 여백 */
+    padding: 22px 0 0 0; /* 선 내부 여백 */
+}
+footer .f_sub .f_info span {
+    margin: 0 28px 10px 0;
+    display: inline-block;
+}
+footer .f_sub .copyright {
+    margin: 25px 0 0 0;
+    color: rgba(255, 255, 255, 0.6);
 }
