@@ -287,14 +287,14 @@ header .gnb ul li a:hover {
 }
 .community .tit {
     width: 321px;
-    margin: 160px 0 0 0;
+    margin: 167px 0 0 0;
 }
 .community .tit h2 {
     color: #fff;
     font-size: 40px;
     font-weight: 700;
     letter-spacing: -0.03em;
-    line-height: 1.1;
+    line-height: 1.2;
 }
 .community .tit strong {
     font-size: 31px;
@@ -317,7 +317,90 @@ header .gnb ul li a:hover {
     color: #fff;
     margin: 39px 0 22px 0;
 }
+.community .news ul li {
+    border-top: 1px solid rgba(255,255,255,0.2);
+}
+.community .news ul li:first-child {
+    border-top: 0;
+}
+.community .news ul li a {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0 9px 0;
+}
+.community .news ul li a strong {
+    color: #fff;
+    font-size: 15px;
+}
+.community .news ul li a:hover strong {
+    font-weight: 700;
+}
+.community .link {
+    width: 404px; /* li한개의 넓이X2  + gap */
+    margin: 123px 0 0 24px;
+}
+.community .link ul {
+    display: flex;
+    flex-wrap: wrap; /* 두줄허용 */
+    gap: 24px; /* li사이의 여백 */
+}
+.community .link ul li {
+    width: 190px;
+}
+.community .link ul li a {
+    display: block;
+    height: 171px;
+    padding: 32px;
+    background-color: rgba(75, 95, 109, 0.66);
+    border-radius: 10px;
+    backdrop-filter: blur(3px);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.2;
+    background-position: right 32px bottom 32px;
+    background-repeat: no-repeat;
+}
+.community .link ul li.link1 a {
+    background-image: url(../images/community_ico1.svg);
+}
+.community .link ul li.link2 a {
+    background-image: url(../images/community_ico2.svg);
+}
+.community .link ul li.link3 a {
+    background-image: url(../images/community_ico3.svg);
+}
+.community .link ul li.link4 a {
+    background-image: url(../images/community_ico4.svg);
+}
+
 
 footer {
-    margin-top: 500px;
+    padding: 45px 0 90px 0;
+}
+footer .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+footer .f_nav ul {
+    display: flex;
+    gap: 45px; /* li사이여백 */
+}
+footer .f_info {
+    margin: 32px 0 13px 0;
+    display: flex;
+    gap: 45px; /* li사이여백 */
+}
+footer .copyright {
+    color: #666;
+}
+footer .familysite button {
+    width: 190px;
+    height: 41px;
+    border: 1px solid #9F9F9F;
+    border-radius: 10px;
+    padding: 0 15px;
+    text-align: left; /* 버튼의 기본은 가운데 - 왼쪽정렬로 변경 */
+    background: url(../images/more.svg) no-repeat right 15px center;
 }
