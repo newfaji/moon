@@ -269,7 +269,7 @@ header .gnb .gnb_wrap ul li:last-child a::after {
                     /* sticky를 해제하기 위해서 
                     position중에서 줘도 변화가 없는 값으로 대체 */
                     top: auto; /* relative도 top이 적용됨. 해제 auto */
-                    margin: 0;
+                    margin: 0 0 13px 0;
                 }
                 .biz .subject h2 {
                     font-size: 25px;
