@@ -258,6 +258,87 @@
             }
 }/* media */
 
+.interview {
+    background-color: #F0ECE4;
+    margin: 156px 0 0 0;
+    padding: 105px 0 186px 0;
+}
+.interview .wrapper {
+    position: relative; /* more 정렬의 기준 */
+}
+.interview .tit {
+    text-align: center;
+    margin: 0 0 95px 0;
+}
+.interview .tit h2 {
+    font-family: 'Eulyoo1945';
+    font-size: 60px;
+    line-height: 1.2;
+    color: #1d1d1d;
+    margin: 0 0 12px 0;
+}
+.interview .more {
+    position: absolute;
+    top: 125px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.interview .more a {
+    padding: 9px 81px 9px 14px;
+    border: 1px solid #999;
+    display: inline-block;
+    color: #666;
+    position: relative; /* after 정렬의 기준 */
+}
+.interview .more a::after {
+    position: absolute; /* a를 기준으로 정렬 */
+    right: 10px;
+    top: 14px;
+    width: 25px;
+    height: 7px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='9' viewBox='0 0 27 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0625 1L25 8H-1.04308e-06' stroke='%23666666'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+.interview .more a:hover {
+    border-color: #896447;
+    background-color: #896447;
+    color: #fff;
+}
+.interview .more a:hover::after {
+    background-image: url("data:image/svg+xml,%3Csvg width='27' height='9' viewBox='0 0 27 9' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M14.0625 1L25 8H-1.04308e-06' stroke='white'/%3E%3C/svg%3E%0A");
+}
+.interview .list ul {
+    display: flex;
+    justify-content: space-between;
+}
+.interview .list ul li {
+    width: 404px;
+}
+/* 디자인상 무조건 두번째 요소에 적용되는 스타일 */
+.interview .list ul li:nth-child(2) {
+    margin-top: 40px;
+}
+.interview .list ul li a .photo {
+    overflow: hidden;
+    font-size: 0; /* 이미지 하단 여백 삭제 */
+    line-height: 0;
+    border-radius: 70px 0 70px 0;
+}
+.interview .list ul li:nth-child(2) a .photo {
+    border-radius: 0 70px 0 70px;
+}
+.interview .list ul li a .photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 감싸는 요소 photo 영역에 이미지 꽉채우기 */
+    transition: 0.5s;
+    filter: grayscale(100%);
+}
+
 footer {
     margin: 200px 0 0 0;
 }
