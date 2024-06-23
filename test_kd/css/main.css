@@ -1,0 +1,67 @@
+@import url(default.css);
+@import url(fonts.css);
+@import url(common.css);
+
+.biz h2 {
+    margin: 80px 0 20px 0;
+    font-size: 45px;
+    font-weight: 700;
+    text-align: center;
+    color: #1d1d1d;
+}
+.biz ul {
+    display: flex;
+    justify-content: space-between;
+}
+.biz ul li {
+    width: 297px;
+}
+.biz ul li a {
+    display: block;
+}
+.biz ul li a h3 {
+    margin: 13px 0 7px 0;
+    font-size: 20px;
+    font-weight: 700;
+    color: #1d1d1d;
+}
+
+.tech {
+    margin: 87px 0 0 0;
+    padding: 80px 0 80px 0;
+    background-color: #F4F4F4;
+}
+.tech h2 {
+    margin: 0 0 20px 0;
+    font-size: 45px;
+    font-weight: 700;
+    color: #1d1d1d;
+    text-align: center;
+}
+.tech ul {
+    display: flex;
+    justify-content: space-between;
+}
+.tech ul li {
+    width: 618px;
+}
+.tech ul li a {
+    display: block;
+    height: 514px;
+    color: #FFFFFF;
+    text-align: center;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.tech ul li.tech01 a {
+    background-image: url(../images/tech01.png);
+}
+.tech ul li.tech02 a {
+    background-image: url(../images/tech02.png);
+}
+.tech ul li a h3 {
+    padding: 196px 0 10px 0;
+    font-size: 35px;
+    font-weight: 700;
+}
