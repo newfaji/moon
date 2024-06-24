@@ -16,8 +16,30 @@
 </head>
 <body>
     <div id="wrap">
+        <!-- 스크롤이 되면 jquery에서 fixed 클래스를 header 줌 -->
         <header>
-            <div class="wrapper"></div>
+            <div class="wrapper">
+                <!--로고이미지가 검은색과 흰색으로 교체됨
+                    이미지태그로 코딩하지 말고 background로 해서 
+                    css에서 상황에 따라 교체하게 해야함 -->
+                <h1 class="logo"><a href="#n">을유문화사</a></h1>
+                <nav class="gnb">
+                    <button class="gnb_open">메뉴열기</button>
+                    <div class="gnb_wrap">
+                        <ul>
+                            <li><a href="#n">을유문화사</a></li>
+                            <li><a href="#n">콘텐츠</a></li>
+                            <li><a href="#n">을유소식</a></li>
+                            <li><a href="#n">독자참여</a></li>
+                        </ul>
+                    </div>
+                </nav>
+                <!-- top navigation bar - 메뉴말고 상단에 있는 다른 요소들 -->
+                <div class="tnb">
+                    <a href="#n" class="mypage">마이페이지</a>
+                    <a href="#n" class="search">검색</a>
+                </div>
+            </div>
         </header>
         <main class="container">
             <section class="visual">
@@ -124,7 +146,9 @@
                     </div><!--tit-->
                     <div class="list">
                         <ul>
-                            <li>
+                            <!-- 마우스를 오버하면 jquery에서 
+                                 오버한 li에만 on 클래스를 추가 -->
+                            <li class="on">
                                 <a href="#n">
                                     <div class="photo"><img src="images/interview1.png" alt="인터뷰 사진"></div>
                                     <div class="txt">
@@ -159,7 +183,66 @@
                     <div class="more"><a href="#n">더보기</a></div>
                 </div><!--wrapper-->
             </section>
-            <section class="story"></section>
+            <section class="story">
+                <div class="wrapper">
+                    <div class="tit">
+                        <h2>시리즈</h2>
+                    </div><!--tit-->
+                    <div class="list swiper">
+                        <ul class="swiper-wrapper">
+                            <li class="long swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/story1.png" alt="시리즈 썸네일"></div>
+                                    <strong>[피나 바우쉬] 미리보기</strong>
+                                    <h3>#5. “피나에게는 바로 그것이 있었습니다”</h3>
+                                    <p>피나 바우쉬의 장례식은 7월 초에 비공개로 거행되었다. 무덤은 부퍼탈의 바레스베크 개신교 개혁파 공동묘지에 있으며, 그녀의 위대한 발견자인 아르노 뷔스텐회퍼에게서 멀지 않다. 숲의 한가운데에 작은 연못이 내려다보이는 소박한 무덤의 가장자리를 화환과 꽃 더미가 장식했다. 그사이에 무덤이 묘석 위에 세워진 단순한 묘비로 표시되어 있다. 팬들이 인조 카네이션과 꼬마 천사들을 놓아두었다.</p>
+                                </a>
+                            </li>
+                            <li class="short swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/story2.png" alt="시리즈 썸네일"></div>
+                                    <strong>[피나 바우쉬] 미리보기</strong>
+                                    <h3>#2. 탄츠테아터의 트레이드마크, 〈카페 뮐러〉</h3>
+                                    <p>같은 공연 시즌에 헨리 퍼셀의 음악에 맞춘 〈카페 뮐러〉가 또 뒤를 이었는데, 1980년대부터 스트라빈스키의 〈봄의 제전〉과 함께 상연되었다. 이 작품은 탄츠테아터의 트레이드마크이자 세계적으로 아주 많이 공연된 작품 중의 하나가 되었다. 거기에서 피나 바우쉬는 새로운 세기에 이르기까지 몸소 몽유병에 걸린 몽상가 역할을 맡았다. 그녀는 일종의 얇은 잠옷을 입고서 눈을 감고 팔을 뻗은 채 헤매고 다니며 거듭 벽에 부딪히고, 아무 곳에도 가닿지 못했다—그녀가 소수의 공연에서만 스스로에게 베푼 드문 경험이다. 그런데 그녀는 원래 오로지 스스로 춤추기 위해 안무를 하고자 했다. 하지만 나중에는 그럴 시간이 더 이상 남아 있지 않았다.</p>
+                                </a>
+                            </li>
+                            <li class="long swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/story3.png" alt="시리즈 썸네일"></div>
+                                    <strong>[연애편지] 미리보기</strong>
+                                    <h3>#3. 모든 것을 다 줄 준비가 되어 있지 않으면서 자신의 일부를 준다는 게 옳은 일인가?</h3>
+                                    <p>우리는 추억과 희망을 통해, 그리고 떨어져 있는 거리와 편지를 통해 서로를 사랑하고 있어요. 우리가 이 사랑을 인간적이고 살아 있는 행복한 감정으로 만들 수 있을까요? 그래야만 해요. 저는 우리가 성공하리라 믿지만, 쉽지 않을 거예요. 넬슨, 사랑해요. 그러나 당신에게 저의 인생을 주지 않으니 제가 당신의 사랑을 받을 자격이 있을까요? 왜 당신에게 제 인생을 줄 수 없는지를 설명하려고 했어요. 그걸 이해하나요? 그에 대해 원망하지 않나요? 결코 원망하지 않을 건가요? 그럼에도 불구하고 당신을 향한 사랑이 진심이라는 걸 여전히 믿으시겠어요? 어쩌면 이런 질문들을 하면 안 되는 건지 모르겠어요. 이렇게 직설적으로 표현하는 게 마음이 아프네요. 하지만 이처럼 피할 수 없어서 저 자신에게 이런 질문을 던집니다.</p>
+                                </a>
+                            </li>
+                            <li class="short swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/story4.png" alt="시리즈 썸네일"></div>
+                                    <strong>[연애편지] 미리보기</strong>
+                                    <h3>#2. 당신의 온 존재와 함께할 거예요.</h3>
+                                    <p>1947년 5월 17일 토요일 오후, 뉴펀들랜드 KLM 비행기에서 상냥하고 기막히게 멋진 사랑하는 나의 ‘토박이 젊은이’, 당신은 저를 또 한 번 울게 했어요. 그러나 달콤한 눈물, 당신에게서 오는 그 모든 것이 그렇듯이 달콤한 눈물을 흘리게 했지요. 저는 막 비행기 안에 자리를 잡곤 당신의 필체를 보고 싶은 마음에 당신에게 무언가를 써 달라고 부탁하지 않은 걸 후회하면서 당신 책의 첫 장을 넘겼어요. 아, 거기엔 당신의 정답고 사랑스럽고 아름다운 문장들이 있었지요. 나는 비행기의 둥근 창에 이마를 대고 푸른 바다 위에서 울었어요. 그러나 달콤한 눈물, 사랑의 눈물, 우리 사랑의 눈물이었지요. 당신을 사랑합니다.</p>
+                                </a>
+                            </li>
+                            <li class="short swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/story5.png" alt="시리즈 썸네일"></div>
+                                    <strong>[유현준의 인문 건축 기행] 미리보기</strong>
+                                    <h3>『유현준의 인문 건축 기행』교보문고 광화문 전시 </h3>
+                                    <p>『도시는 무엇으로 사는가』를 시작으로 『어디서 살 것인가』, 『공간이 만든 공간』, 『공간의 미래』, 그리고 올해 출간된 『유현준의 인문 건축 기행』까지 을유문화사에서 출간한 책이 5권이 된 유현준 작가의 저서를 모두 만나보실 수 있습니다. 도서 설명과 함께 관련 인터뷰, 북트레일러 영상 QR코드가 삽입되어 있어 자세한 내용도 함께 살펴보실 수 있습니다.</p>
+                                </a>
+                            </li>
+                            <li class="long swiper-slide">
+                                <a href="#n">
+                                    <div class="photo"><img src="images/story6.png" alt="시리즈 썸네일"></div>
+                                    <strong>[쇼펜하우어의 행복론과 인생론]</strong>
+                                    <h3>#6. 삶의 공허함과 무의미함을 극복하는 법</h3>
+                                    <p>모든 동물, 특히 인간은 이 세상에 존재하고 계속 살아가기 위해서는 의지와 지성 사이에 얼마간의 적합성과 균형을 유지하는 것이 필요하다. 그런데 자연이 이 적합성과 균형을 더 정확하고 더 올바르게 맞출수록 인간은 더 쉽고 더 확실하고 더 쾌적하게 이 세상을 헤쳐 나갈 것이다. 사실 올바른 균형점에 단순히 가까워지는 것만으로 이미 그는 파멸을 피하기에 충분하다. 따라서 앞서 말한 균형의 올바름과 적합성의 한계 내에서 어느 정도의 폭이 존재한다. 여기에 적용되는 기준은 다음과 같다. </p>
+                                </a>
+                            </li>
+                        </ul>
+                    </div><!--list-->
+                    <div class="more"><a href="#n">더보기</a></div>
+                </div><!--wrapper-->
+            </section>
         </main>
         <footer></footer>
     </div>
