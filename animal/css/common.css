@@ -3,7 +3,6 @@
 모든 태그를 감싸는 html body에 선언 */
 html, body {
     font-family: 'Pretendard', sans-serif;
-    font-family: 'LG';
     font-weight: 400;
     font-size: 15px;
     letter-spacing: 0; /* 자간 */
