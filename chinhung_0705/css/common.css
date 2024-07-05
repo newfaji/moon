@@ -1,0 +1,24 @@
+html, body {
+    font-family: 'Pretendard', sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    color: #3d3d3d;
+    line-height: 1.4;
+    letter-spacing: -0.05em;
+    word-break: keep-all;
+    word-wrap: break-word;
+}
+#wrap {
+    min-width: 1300px;
+}
+.wrapper {
+    width: 1260px;
+    margin: 0 auto;
+}
+
+@media screen and (max-width:1300px){
+    .wrapper {
+        margin: 0 20px;
+    }
+}
+
