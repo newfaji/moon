@@ -673,6 +673,10 @@ section.service .tit p {
         height: 121px;
         background-color: transparent;
     }
+    .service .list ul li:hover a {
+        transform: translate(0, 0);
+        box-shadow: none;
+    }
     .service .list ul li a .inner {
         margin: 0;
         padding: 60px 0 0 0;
@@ -691,5 +695,5 @@ section.service .tit p {
     }
 }
 @media screen and (max-width:768px){
-    
+
 }
