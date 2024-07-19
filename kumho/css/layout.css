@@ -445,5 +445,159 @@ header.fixed .logo a::before {
 }/*media*/
 
 footer {
-    height: 200vh;
+    padding: 90px 0;
+    background-color: #2D2D2D;
+    color: rgba(255,255,255,0.8);
+}
+footer .wrapper {
+    position: relative; /* family_site와 youtube 정렬의 기준 */
+}
+footer .youtube {
+    position: absolute;
+    right: 0;
+    top: -130px;
+}
+footer .youtube a {
+    display: block;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #EA141D;
+    padding-top: 40px;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    position: relative;/* before 정렬의 기준 */
+}
+footer .youtube a::before {
+    position: absolute;
+    left: 50%;
+    top: 17px;
+    transform: translate(-50%, 0);
+    width: 23px;
+    height: 16px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='16' viewBox='0 0 24 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cg clip-path='url(%23clip0_48_153)'%3E%3Cpath d='M23.5 5.01342C23.5 2.24152 21.2381 0 18.4552 0H5.54475C2.76188 0 0.5 2.24783 0.5 5.01342V10.9803C0.5 13.7522 2.76188 15.9937 5.54475 15.9937H18.4489C21.2381 15.9937 23.4936 13.7459 23.4936 10.9803V5.01342H23.5ZM15.9075 8.4483L10.1193 11.296C9.89061 11.4159 9.12182 11.2518 9.12182 10.9992V5.15864C9.12182 4.89976 9.89696 4.7356 10.1257 4.86188L15.666 7.85477C15.9011 7.98737 16.1425 8.32202 15.9075 8.4483Z' fill='white'/%3E%3C/g%3E%3Cdefs%3E%3CclipPath id='clip0_48_153'%3E%3Crect width='23' height='16' fill='white' transform='translate(0.5)'/%3E%3C/clipPath%3E%3C/defs%3E%3C/svg%3E%0A");
+    content: "";
+}
+footer .family_site {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 187px;
+}
+footer .family_site button {
+    width: 100%;
+    height: 42px;
+    background-color: rgba(29,29,29,0.8);
+    border: 1px solid #1d1d1d;
+    text-align: left;
+    padding-left: 21px;
+    position: relative; /* after 정렬의 기준 */
+}
+footer .family_site button::after {
+    position: absolute;
+    right: 16px;
+    top: 18px;
+    width: 11px;
+    height: 6px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml,%3Csvg width='11' height='6' viewBox='0 0 11 6' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5.49953 1.22499L1.4193 5.30523C1.31168 5.41284 1.18498 5.46529 1.03918 5.46259C0.893291 5.45979 0.766542 5.40458 0.658931 5.29697C0.55132 5.18927 0.497514 5.06252 0.497514 4.91672C0.497514 4.77092 0.55132 4.64417 0.658931 4.53647L4.8058 0.381346C4.90375 0.283395 5.01348 0.210811 5.13499 0.163596C5.25651 0.116381 5.37802 0.0927732 5.49953 0.0927732C5.62105 0.0927732 5.74256 0.116381 5.86408 0.163596C5.98559 0.210811 6.09532 0.283395 6.19327 0.381346L10.3485 4.53647C10.4561 4.64417 10.5086 4.77232 10.5058 4.92092C10.503 5.06952 10.4477 5.19762 10.3401 5.30523C10.2325 5.41284 10.1058 5.46665 9.95989 5.46665C9.81409 5.46665 9.68738 5.41284 9.57977 5.30523L5.49953 1.22499Z' fill='white' fill-opacity='0.8'/%3E%3C/svg%3E%0A");
+    content: "";
+}
+footer .family_site button.family_close::after {
+    transform: rotate(180deg);
+}
+footer .family_site ul {
+    display: none; /* 숨김 */
+    position: absolute; /* family_site를 기준으로 정렬 */
+    left: 0;
+    bottom: 43px;
+    width: 100%;
+    background-color: #1d1d1d;
+    border: 1px solid #1d1d1d;
+    padding: 10px 20px;
+}
+footer .family_site ul li a {
+    display: block;
+    line-height: 2;
+}
+footer .family_site .family_close {
+    display: none; /* 숨김 */
+}
+footer .family_site.open .family_open {
+    display: none; /* 숨김 */
+}
+footer .family_site.open .family_close {
+    display: block; /* 나타남 */
+}
+footer .f_nav ul {
+    display: flex;
+}
+footer .f_nav ul li {
+    margin-right: 35px;
+    position: relative; /* after 정렬의 기준 */
+}
+footer .f_nav ul li::after {
+    position: absolute;
+    right: -20px;
+    top: 5px;
+    width: 1px;
+    height: 11px;
+    background-color: rgba(255,255,255,0.2);
+    content: "";
+}
+footer .f_nav ul li:last-child::after {
+    display: none;
+}
+footer .copyright {
+    margin-top: 15px;
+    color: rgba(255,255,255,0.6);
+}
+@media screen and (max-width:1300px){
+    
+}
+@media screen and (max-width:1024px){
+    footer {
+        padding: 0 0 58px 0;
+    }
+    footer .youtube {
+        position: relative;
+        right: auto;
+        top: -40px;
+        text-align: center;
+    }
+    footer .youtube a {
+        display: inline-block;
+    }
+    footer .family_site {
+        position: relative;
+        right: auto;
+        top: auto;
+        width: auto;
+    }
+    footer .f_nav {
+        margin: 30px 0 0 0;
+    }
+    footer .f_nav ul {
+        flex-wrap: wrap; /* 줄바꿈 허용 */
+    }
+    footer .f_nav ul li {
+        margin: 0 30px 7px 0;
+    }
+    footer .f_nav ul li::after {
+        right: -17px;
+        top: 5px;
+        height: 9px;
+    }
+    footer .copyright {
+        margin-top: 23px;
+    }
+}
+@media screen and (max-width:768px){
+    
 }
