@@ -195,10 +195,10 @@ header .header_sub .logo a::before {
         box-shadow: 0 0 5px rgba(0,0,0,0.1);
     }
     header.menu_over.fixed::after {
-        top: 100px;
+        top: 68px;
     }
     header.fixed + .container {
-        margin-top: 100px;
+        margin-top: 68px;
     }
     header.fixed .wrapper {
         width: auto;
@@ -208,7 +208,7 @@ header .header_sub .logo a::before {
         display: none;
     }
     header.fixed .header_sub {
-        height: 100px;
+        height: 68px;
         display: flex;
         justify-content: space-between;
     }
@@ -217,16 +217,16 @@ header .header_sub .logo a::before {
         left: auto;
         transform: translate(0, 0); /* 기존값 삭제 */
         top: auto;
-        margin: 16px 0 0 0;
+        margin: 5px 0 0 0;
     }
     header.fixed .header_sub .gnb .gnb_wrap ul.depth1 > li > a {
-        line-height: 100px;
+        line-height: 68px;
     }
     header.fixed .header_sub .gnb .gnb_wrap ul.depth1 > li.over > a > span::after {
-        bottom: -39px;
+        bottom: -23px;
     }
     header.fixed .header_sub .gnb .gnb_wrap ul.depth2 {
-        top: 100px;
+        top: 68px;
     }
 }/* media */
 @media screen and (max-width:1300px) and (min-width:1025px){
