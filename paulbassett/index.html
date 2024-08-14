@@ -125,7 +125,7 @@
                     </div>
                 </div>
             </section>
-            <section class="menu">
+            <section class="menu" data-aos="fade-up">
                 <div class="tit">
                     <div class="wrapper">
                         <h2>Menu</h2>
@@ -221,7 +221,7 @@
                     </div><!--popup-->
                 </div><!--list-->
             </section>
-            <section class="brand">
+            <section class="brand" data-aos="fade-up">
                 <div class="inner">
                     <h2><span>Quality Never Compromised.</span></h2>
                     <p>폴 바셋은 ‘품질과 타협하지 않는다’는 브랜드 원칙 아래 최고의 제품과 서비스를 선보이기 위해 노력하고 있습니다.<br>
@@ -232,7 +232,7 @@
                     <span>QUALITY NEVER COMPROMISED QUALITY NEVER COMPROMISED QUALITY NEVER COMPROMISED QUALITY NEVER COMPROMISED QUALITY NEVER COMPROMISED QUALITY NEVER COMPROMISED</span>
                 </div>
             </section>
-            <section class="md">
+            <section class="md" data-aos="fade-up">
                 <div class="wrapper">
                     <div class="tit">
                         <h2>Product</h2>
@@ -292,7 +292,7 @@
                     </div><!--list-->
                 </div>
             </section>
-            <section class="event">
+            <section class="event" data-aos="fade-up">
                 <div class="tit">
                     <div class="wrapper">
                         <h2>sns</h2>
@@ -393,10 +393,12 @@
         </footer>
     </div>
     <script>
-        AOS.init({
-            offset: 0, // 해당 콘텐츠가 하단에서 몇 px 위로 올라와에 나타나는 효과가 나타날지 셋팅하는 값
-            duration: 500, // 애니메이션 효과가 작동되는 시간
-            easing: 'ease', // 가속도
+        $(window).on("scroll", function () {
+            AOS.init({
+                offset: 0, // 해당 콘텐츠가 하단에서 몇 px 위로 올라와에 나타나는 효과가 나타날지 셋팅하는 값
+                duration: 500, // 애니메이션 효과가 작동되는 시간
+                easing: 'ease', // 가속도
+            });
         });
     </script>
 </body>
