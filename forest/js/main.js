@@ -1,4 +1,5 @@
 $(document).ready(function(){
+
   const myFullpage = new fullpage('#fullpage', {  /* html에서 페이지 전체를 감싸는 요소 */
 
     navigation: false, /* 오른쪽에 각 페이지의 paging */
@@ -28,9 +29,13 @@ $(document).ready(function(){
       console.log(destination.index)
       $('.fp_nav ul li').removeClass('active')
       $('.fp_nav ul li').eq(destination.index).addClass('active')
+      
+      if(destination.index == 1){ //tree가 로딩되었을때
+        $('.tree .count span').counterUp();
+      }
     },
 
-    responsiveWidth: 1024 /* fullpage를 적용시키지 않을 모바일 사이즈 */
+    responsiveWidth: 1025 /* fullpage를 적용시키지 않을 모바일 사이즈 */
   });//fullpage
 
   const visual_swiper = new Swiper('.visual .swiper', { /* 팝업을 감싼는 요소의 class명 */
@@ -49,6 +54,36 @@ $(document).ready(function(){
           return '<div class="item '+className+'"><span class="txt' + (index + 1) + '"></span></div>';
       },
     },
+    
+  });//visual_swiper
+
+  const story_swiper = new Swiper('.story .swiper', { /* 팝업을 감싼는 요소의 class명 */
+    slidesPerView: 2, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
+    spaceBetween: 16, /* 팝업과 팝업 사이 여백 */
+    breakpoints: {
+      640: {    /* 640px 이상일때 적용 */
+        slidesPerView: 3,
+        spaceBetween: 20,
+      },
+      768: {    /* 768px 이상일때 적용 */
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+      1024: {   /* 1024px 이상일때 적용 */
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      1540: {    /* 1540px 이상일때 적용 */
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+    },
+    //centeredSlides: true, /* 팝업을 화면에 가운데 정렬(가운데 1번이 옴) */
+    loop: true,  /* 마지막 팝업에서 첫번째 팝업으로 자연스럽게 넘기기 */
+    // autoplay: {  /* 팝업 자동 실행 */
+    //   delay: 2500,
+    //   disableOnInteraction: true,
+    // },
     
   });
 
