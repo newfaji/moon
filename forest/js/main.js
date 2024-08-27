@@ -59,23 +59,11 @@ $(document).ready(function(){
   });//visual_swiper
 
   const story_swiper = new Swiper('.story .swiper', { /* 팝업을 감싼는 요소의 class명 */
-    slidesPerView: 2, /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
+    slidesPerView: 'auto', /* 한번에 보일 팝업의 수 - 모바일 제일 작은 사이즈일때 */
     spaceBetween: 16, /* 팝업과 팝업 사이 여백 */
     breakpoints: {
-      640: {    /* 640px 이상일때 적용 */
-        slidesPerView: 3,
-        spaceBetween: 20,
-      },
-      768: {    /* 768px 이상일때 적용 */
-        slidesPerView: 4,
-        spaceBetween: 30,
-      },
-      1024: {   /* 1024px 이상일때 적용 */
-        slidesPerView: 4,
-        spaceBetween: 24,
-      },
-      1540: {    /* 1540px 이상일때 적용 */
-        slidesPerView: 4,
+      1024: {    /* 768px 이상일때 적용 */
+        slidesPerView: 'auto',
         spaceBetween: 24,
       },
     },
